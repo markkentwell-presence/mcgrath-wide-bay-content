@@ -1,0 +1,20 @@
+{
+  "name": "mcgrath-wide-bay-content",
+  "version": "1.1.0",
+  "description": "Social content system for McGrath Knight Frank Wide Bay & Fraser Coast agents: viewer-first hooks (never feature lists), piece-to-camera scripts with teleprompter guidance, brand-compliant carousels, premium edit recipes, QLD compliance and anti-slop checks, a hook linter and scorecard, and a weekly ideas engine. One editable office profile.",
+  "author": {
+    "name": "Mark Kentwell",
+    "url": "https://github.com/markkentwell-presence"
+  },
+  "keywords": [
+    "real-estate",
+    "social-media",
+    "carousel",
+    "teleprompter",
+    "queensland",
+    "mcgrath"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/markkentwell-presence/mcgrath-wide-bay-content",
+  "repository": "https://github.com/markkentwell-presence/mcgrath-wide-bay-content"
+}

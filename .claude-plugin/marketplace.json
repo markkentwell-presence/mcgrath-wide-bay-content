@@ -1,0 +1,13 @@
+{
+  "name": "mcgrath-wide-bay",
+  "owner": { "name": "Mark Kentwell", "url": "https://github.com/markkentwell-presence" },
+  "description": "McGrath Wide Bay content plugin: viewer-first scripts, carousels, edits and QLD compliance checks for real estate social content.",
+  "plugins": [
+    {
+      "name": "mcgrath-wide-bay-content",
+      "source": "./",
+      "description": "Viewer-first social content system for McGrath Knight Frank Wide Bay & Fraser Coast agents.",
+      "category": "Real estate"
+    }
+  ]
+}
