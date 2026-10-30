@@ -5,7 +5,7 @@ description: Weekly content ideas engine for McGrath Wide Bay agents and propert
 
 # Weekly ideas engine (4 posts a week)
 
-The office already posts about four times a week. The problem is that most posts are house videos and open-home tiles that repeat what is on realestate.com.au. This engine keeps four posts a week but changes the mix so each one has a job.
+The office already posts about four times a week. If the group runs the plan for more than one office, ask which office (or offices) the week is for and make a separate four-post plan per office, each using that office's suburbs and phone from the office profile. The problem is that most posts are house videos and open-home tiles that repeat what is on realestate.com.au. This engine keeps four posts a week but changes the mix so each one has a job.
 
 ## Step 1. Ask (one message)
 1. Which listings and rentals are live this week (paste links or addresses)? Any open homes, auctions or just-solds you are allowed to talk about?

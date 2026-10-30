@@ -6,12 +6,12 @@ A quick guide for the team. Five minutes to set up, then about ten minutes a pos
 
 - **Claude (recommended):** Customize > Plugins > Add > Upload plugin, choose `mcgrath-wide-bay-content-plugin.zip`. If plugins are not on your plan, upload the six skill zips under Customize > Skills.
 - **ChatGPT or Copilot:** create a Custom GPT or Copilot agent. Paste `CORE-INSTRUCTIONS.md` into Instructions and attach `MCGRATH-WIDE-BAY-CONTENT-INSTRUCTIONS.md` as knowledge.
-- **Edit your office details once:** open `OFFICE-PROFILE.md`, change the words after each colon (agency name, phone, licensee, sign-off), save it and upload it to your Claude Project, Custom GPT or Copilot agent. To change something later, edit and re-upload, or just ask: "Update our office profile: ...".
-- Each presenter fills in a profile once (name, role, suburbs, years local, camera comfort). The assistant will offer to save it.
+- **Edit your office details once:** open `OFFICE-PROFILE.md`, check the office list (address, phone and email for Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone and Agnes Water), delete any office that does not use the kit, change the words after each colon (licensee, sign-off), save it and upload it to your Claude Project, Custom GPT or Copilot agent. To change something later, edit and re-upload, or just ask: "Update our office profile: ...".
+- Each presenter fills in a profile once (name, role, office, suburbs, years local, camera comfort). The assistant will offer to save it.
 
 ## 2. Every Monday: plan the week
 
-Type: **"Plan our four posts for this week."** Paste what is new: listings, rentals, sold results, local events.
+Type: **"Plan our four posts for this week for Bundaberg."** (or Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water). Paste what is new: listings, rentals, sold results, local events.
 
 You get four posts across the five goals, with no more than one pure listing post.
 
@@ -26,8 +26,10 @@ Type: **"Make post 2"**, or start fresh with **"I want a post."** The assistant 
 
 1. Who is presenting?
 2. What is it for? Buyers, tenants, landlords, sellers, or brand.
-3. Which property or topic? Paste the listing link.
+3. Which property or topic, and which office or suburb? Paste the listing link.
 4. Video to camera or carousel?
+
+**Pick the office for every post.** The assistant tells you which office it used (for example "Using the Hervey Bay office: 07 4121 0616"). If that is wrong, say so and it swaps the phone, email and sign-off.
 
 **Video:** you get a teleprompter script, a shot list and captions for each platform.
 

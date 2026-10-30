@@ -1,6 +1,6 @@
 # McGrath Wide Bay content system (combined instructions for ChatGPT, Copilot, Gemini and other assistants)
 
-Version 1.1.0. This one file holds every skill in the plugin. Where a section says "use the X skill", read the section with that name here. Scripts (lint.py, hooks.py) are optional; apply the same rules by reading.
+Version 1.2.0. This one file holds every skill in the plugin. Where a section says "use the X skill", read the section with that name here. Scripts (lint.py, hooks.py) are optional; apply the same rules by reading.
 
 ---
 
@@ -9,12 +9,33 @@ Version 1.1.0. This one file holds every skill in the plugin. Where a section sa
 
 Every skill reads this file for the office's details. Change a value after the colon, save, done. Leave a value blank if you do not use it.
 
+> **Edit this.** The office list below was filled in from the public mcgrathwidebay.com.au office pages on 30 October 2026. Check every phone, email and address before your first post, delete any office that does not use this kit, and re-check whenever an office moves or changes number.
+
 ### Agency
 - Agency name on posts: McGrath Knight Frank Wide Bay & Fraser Coast
 - Short name: McGrath Wide Bay
-- Office phone: [confirm]
+- Principal: Ainsley Driver
 - Website: mcgrathwidebay.com.au
-- Areas: Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water and surrounds
+- Areas: Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water and surrounds (Childers, Gin Gin, Burnett Heads, Innes Park, Elliott Heads and the wider Wide Bay and Fraser Coast)
+- Default office (used if a post does not say): Bundaberg
+
+### Offices (pick one for every post)
+
+Every post uses the phone and email of the office it is for. The assistant asks which office or suburb a post is for, then uses that row. If a suburb is not listed, it uses the nearest office below and asks you to confirm.
+
+| Office | Address | Phone | Email | Suburbs it looks after |
+| --- | --- | --- | --- | --- |
+| Bundaberg | 156 Bourbong Street, Bundaberg QLD 4670 | 07 4155 5000 | fomwidebay@mcgrath.com.au | Bundaberg and surrounds, Childers, Gin Gin, Burnett Heads, Moore Park Beach |
+| Bargara | 10/15 See Street, Bargara QLD 4670 | 07 4155 5000 | fomwidebay@mcgrath.com.au | Bargara, Innes Park, Coral Cove, Elliott Heads, Kelly's Beach, Mon Repos |
+| Hervey Bay | 19A Main Street, Pialba QLD 4655 | 07 4121 0616 | fomherveybay@mcgrath.com.au | Hervey Bay, Pialba, Scarness, Torquay, Urangan, Point Vernon |
+| Maryborough | 232-244 Adelaide Street, Maryborough QLD 4650 | 07 4121 0616 | fommaryborough@mcgrath.com.au | Maryborough and surrounds |
+| Gladstone | 1/69 Goondoon Street, Gladstone QLD 4680 | 07 4880 3045 | [confirm] | Gladstone and surrounds |
+| Agnes Water | Shop 20 Endeavour Plaza, 2 Captain Cook Drive, Agnes Water QLD 4677 | 07 4974 9470 | agneswater@mcgrath.com.au | Agnes Water, Seventeen Seventy and surrounds |
+
+Notes:
+- Bundaberg and Bargara share one phone and email. Hervey Bay and Maryborough share one phone.
+- The "suburbs it looks after" column is a starting guess for routing posts. Change it to match how your offices actually split the area.
+- Use office lines only on posts. Put an agent's mobile on a post only if that agent says yes.
 
 ### Licensee details
 - Licensee (company) name: [optional]
@@ -34,10 +55,10 @@ Every skill reads this file for the office's details. Change a value after the c
 - Logo: supplied McGrath x Knight Frank logo only, never redrawn or recoloured
 
 ### Sign-off and standard lines
-- Caption sign-off: {Presenter first name}, McGrath Wide Bay
+- Caption sign-off: {Presenter first name}, McGrath {Office}
 - Market post footer: General information only. Not financial advice.
 - Stats source format: Source: {provider}, {month year} data.
-- Default CTA (Instagram and Facebook): Message us for details.
+- Default CTA (Instagram and Facebook): Message us for details, or call our {Office} office on {Office phone}.
 - Default CTA (TikTok): Follow for more on {suburb}.
 
 ### Head office
@@ -60,7 +81,7 @@ Read the office's details before writing anything. Look in this order and use th
 1. An `OFFICE-PROFILE.md` the user attached, pasted, or saved in Project knowledge or the current folder.
 2. `OFFICE-PROFILE.md` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/OFFICE-PROFILE.md`) or inside this skill folder.
 
-Use its agency name, phone, brand colours, sign-off, standard lines and the "Show licensee line on posts" setting in every output. If the user asks to change a detail ("our licence number is..."), give them the updated file to save.
+Use its agency name, office list, brand colours, sign-off, standard lines and the "Show licensee line on posts" setting in every output. If the user asks to change a detail ("our licence number is..."), give them the updated file to save.
 
 ## Step 1. Ask these four questions first (one message, numbered)
 
@@ -73,10 +94,16 @@ Ask all four together, keep it short, and accept short answers. If the user alre
    3. More landlords on the rent roll
    4. More sellers and listings
    5. Personal and community brand (build in public)
-3. **What is the property or topic?** Paste the listing link or copy, or describe the topic (market update, suburb, how we work, a sold result, a local event).
+3. **What is the property or topic, and which office or suburb is it for?** Paste the listing link or copy, or describe the topic (market update, suburb, how we work, a sold result, a local event). The group has several offices (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water), so confirm which one the post belongs to.
 4. **Which format?** Piece to camera (talking to the phone) or carousel (swipe post). If unsure, recommend one using the rule below.
 
 Format rule of thumb: comfort 1 to 2, or a topic heavy with numbers, suggests a carousel. Comfort 3 to 5, or a property with a strong walk-through, suggests piece to camera. Both is fine: one script and one carousel from the same idea.
+
+## Step 1b. Pick the office
+
+Every post belongs to one office. Work it out in this order: the office the user names, the suburb of the listing or topic (match it to the "Suburbs it looks after" column in the office profile), the presenter's saved office, then the profile's default office. Say which office you picked in one line ("Using the Hervey Bay office: 07 4121 0616") so the user can correct it.
+
+Use that office's phone, email, suburb names and sign-off in the script, slides and captions. Never mix offices in one post, and never use one office's phone on another office's listing.
 
 ## Step 2. Presenter profile
 
@@ -86,7 +113,7 @@ Use the profile to set voice: a 20-year principal talks with quiet authority, a 
 
 ## Step 3. Pull the facts
 
-- If a listing link or copy is supplied, extract: address, suburb, beds, baths, car, land size, price or price method (offers over, auction, by negotiation, contact agent), inspection times, standout features in the agent's own words, agent names.
+- If a listing link or copy is supplied, extract: address, suburb, which office lists it, beds, baths, car, land size, price or price method (offers over, auction, by negotiation, contact agent), inspection times, standout features in the agent's own words, agent names.
 - If you can browse, read the link. If you cannot, ask the user to paste the listing copy.
 - Never invent features, distances, views, school catchments, rental returns or market stats. If a fact is missing, leave a clear placeholder like `[confirm: walking distance to beach]` and list it at the end.
 - Market stats must come from a named source with a date (for example the office's own RP Data / Cotality or PriceFinder report, REIQ, SQM, Domain or realestate.com.au suburb profiles). Stamp it: "Source: X, data as at Month YYYY".
@@ -283,7 +310,7 @@ Save one of these per person. Paste it at the start of a chat, or keep it in you
 
 - Name:
 - Role: (sales agent / property manager / principal / BDM / leasing)
-- Office: (Bundaberg | Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water)
+- Office: (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone or Agnes Water; this sets the phone and email on your posts)
 - Suburbs I know best:
 - Years in the area / in real estate:
 - Licence or registration name as it must appear in ads: [confirm with principal]
@@ -463,7 +490,7 @@ See `references/film-it-guide.md` for the full kit and Teleprompter Pro guide. T
 <!-- mcgrath-piece-to-camera/references/hook-bank.md -->
 ## Hook bank (by goal)
 
-Fill the braces with real, checked details. Every hook is about the viewer's money, decision, mistake or inside knowledge. None of them opens on features. Pick one, then write two more variations to film straight after the main take.
+Fill the braces with real, checked details. Use suburbs and towns from the office the post is for (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water and their surrounds). Every hook is about the viewer's money, decision, mistake or inside knowledge. None of them opens on features. Pick one, then write two more variations to film straight after the main take.
 
 ### 1. Buyers (listings)
 - Here's what ${price} buys you in {suburb} right now.
@@ -519,7 +546,7 @@ Fill the braces with real, checked details. Every hook is about the viewer's mon
 - 4 bed, 3 bath, 7 car on 8,363 m². *(specs)*
 - Welcome to 12 Example Street. *(address opener)*
 - Hi everyone, it's {name} from McGrath. *(greeting)*
-- Bargara's median house price is up 11.9%. *(stat with no stake for the viewer)*
+- {Suburb}'s median house price is up {x}%. *(stat with no stake for the viewer)*
 - Stunning family home in a sought-after location. *(hype and slop)*
 
 
@@ -629,7 +656,7 @@ Score with `references/scorecard.md` and only hand back at 8.5 or better.
 | 1 Cover | 12 headline + 6 sub | The hook. Must make sense with the sound off and at thumbnail size. |
 | 2 | 25 | Deliver something immediately: the number, the answer, the first fact. |
 | Middle slides | 30 each | One idea each. Headline 3 to 8 words, body 15 to 25 words. |
-| Last slide | 25 | One CTA, contact or inspection details, agency name, source line if stats used. Licensee line only if the office profile says yes. |
+| Last slide | 25 | One CTA, contact or inspection details with the right office's phone (from the office profile), agency name, source line if stats used. Licensee line only if the office profile says yes. |
 
 5 to 8 slides is the sweet spot. 10 maximum.
 
@@ -673,7 +700,7 @@ Source: the live mcgrathwidebay.com.au theme stylesheet and logo files, checked 
 ### Name and co-brand
 
 - Office trading name on its own site: **McGrath Knight Frank Wide Bay & Fraser Coast**.
-- The McGrath head office site lists the office as **McGrath Bundaberg | Bargara**.
+- The group runs several offices (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water). The McGrath head office site lists the Bundaberg office as **McGrath Bundaberg | Bargara**. Name the office a post is for on the last slide, with that office's phone from the office profile.
 - Logo in use: the McGrath and Knight Frank dual logo (McGrath wordmark in black, a vertical divider, the Knight Frank mark in Knight Frank red). Use the supplied file only.
 
 ### Colours
@@ -707,7 +734,7 @@ Headline sentence case, not all caps. Small uppercase labels with wide letter sp
 ### Photography
 
 - Use the professional listing photography supplied for the campaign, with the photographer's licence terms and the vendor's OK.
-- Local lifestyle shots should be genuinely local (Bargara foreshore, Mon Repos, Bundaberg CBD, Hervey Bay esplanade) and either your own or properly licensed.
+- Local lifestyle shots should be genuinely local (Bargara foreshore, Mon Repos, Bundaberg CBD, Hervey Bay esplanade, Maryborough's heritage streets, Gladstone harbour, Agnes Water and Seventeen Seventy) and match the office the post is for and either your own or properly licensed.
 - No AI-generated "property" images presented as real. No fake twilight conversions unless labelled where required by McGrath policy.
 
 ### Tone
@@ -1001,7 +1028,7 @@ guaranteed, guarantee, risk-free, will sell for, will rent for, best agent, numb
 
 # [mcgrath-weekly-ideas] Weekly ideas engine (4 posts a week)
 
-The office already posts about four times a week. The problem is that most posts are house videos and open-home tiles that repeat what is on realestate.com.au. This engine keeps four posts a week but changes the mix so each one has a job.
+The office already posts about four times a week. If the group runs the plan for more than one office, ask which office (or offices) the week is for and make a separate four-post plan per office, each using that office's suburbs and phone from the office profile. The problem is that most posts are house videos and open-home tiles that repeat what is on realestate.com.au. This engine keeps four posts a week but changes the mix so each one has a job.
 
 ## Step 1. Ask (one message)
 1. Which listings and rentals are live this week (paste links or addresses)? Any open homes, auctions or just-solds you are allowed to talk about?

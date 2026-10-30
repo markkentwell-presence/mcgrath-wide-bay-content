@@ -1,6 +1,6 @@
 # Hook bank (by goal)
 
-Fill the braces with real, checked details. Every hook is about the viewer's money, decision, mistake or inside knowledge. None of them opens on features. Pick one, then write two more variations to film straight after the main take.
+Fill the braces with real, checked details. Use suburbs and towns from the office the post is for (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water and their surrounds). Every hook is about the viewer's money, decision, mistake or inside knowledge. None of them opens on features. Pick one, then write two more variations to film straight after the main take.
 
 ## 1. Buyers (listings)
 - Here's what ${price} buys you in {suburb} right now.
@@ -56,5 +56,5 @@ Fill the braces with real, checked details. Every hook is about the viewer's mon
 - 4 bed, 3 bath, 7 car on 8,363 m². *(specs)*
 - Welcome to 12 Example Street. *(address opener)*
 - Hi everyone, it's {name} from McGrath. *(greeting)*
-- Bargara's median house price is up 11.9%. *(stat with no stake for the viewer)*
+- {Suburb}'s median house price is up {x}%. *(stat with no stake for the viewer)*
 - Stunning family home in a sought-after location. *(hype and slop)*

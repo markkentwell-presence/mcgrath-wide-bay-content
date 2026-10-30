@@ -53,7 +53,7 @@ Paste `CORE-INSTRUCTIONS.md` as custom instructions and attach the other two fil
 
 ## Edit your office details (one file)
 
-All office details live in **`OFFICE-PROFILE.md`**: agency name, phone, licensee, licence number, whether to show a licensee line, brand colours, fonts, sign-off and standard lines.
+All office details live in **`OFFICE-PROFILE.md`**: agency name, principal, every office (address, phone, email and the suburbs it looks after), licensee, licence number, whether to show a licensee line, brand colours, fonts, sign-off and standard lines.
 
 1. Open `OFFICE-PROFILE.md` in any text editor (TextEdit, Notepad, or the pencil icon on GitHub).
 2. Change the words after each colon. Leave anything you do not use blank.
@@ -64,6 +64,15 @@ All office details live in **`OFFICE-PROFILE.md`**: agency name, phone, licensee
 4. Or ask: *"Update our office profile: our licence number is 1234567."* The assistant gives you the new file to save.
 
 **Licensee line:** off by default. Queensland's Property Occupations Act 2014 s 95(1) only requires the particulars set by regulation, and the current Property Occupations Regulation 2014 sets none for advertisements, so a licence number is not required on social posts. The agency name stays on every post. If McGrath head office asks for more, set "Show licensee line on posts" to yes, or put the licensee details once in each platform bio. Not legal advice.
+
+## More than one office
+
+The group has six offices: Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone and Agnes Water. One copy of this plugin serves them all.
+
+- The office list in `OFFICE-PROFILE.md` holds each office's phone and email. Check it once and delete any office that does not use the kit.
+- Every post belongs to one office. The assistant asks which office or suburb a post is for (or works it out from the listing suburb or the presenter's profile), says which office it picked, and uses only that office's phone and email.
+- Each presenter's profile names their office, so they are not asked every time.
+- For the weekly plan, say which office it is for ("Plan this week for Hervey Bay"), or ask for one plan per office.
 
 ## How good is "good"
 

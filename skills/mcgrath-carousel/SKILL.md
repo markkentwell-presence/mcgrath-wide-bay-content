@@ -32,7 +32,7 @@ Score with `references/scorecard.md` and only hand back at 8.5 or better.
 | 1 Cover | 12 headline + 6 sub | The hook. Must make sense with the sound off and at thumbnail size. |
 | 2 | 25 | Deliver something immediately: the number, the answer, the first fact. |
 | Middle slides | 30 each | One idea each. Headline 3 to 8 words, body 15 to 25 words. |
-| Last slide | 25 | One CTA, contact or inspection details, agency name, source line if stats used. Licensee line only if the office profile says yes. |
+| Last slide | 25 | One CTA, contact or inspection details with the right office's phone (from the office profile), agency name, source line if stats used. Licensee line only if the office profile says yes. |
 
 5 to 8 slides is the sweet spot. 10 maximum.
 

@@ -4,7 +4,7 @@ Save one of these per person. Paste it at the start of a chat, or keep it in you
 
 - Name:
 - Role: (sales agent / property manager / principal / BDM / leasing)
-- Office: (Bundaberg | Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water)
+- Office: (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone or Agnes Water; this sets the phone and email on your posts)
 - Suburbs I know best:
 - Years in the area / in real estate:
 - Licence or registration name as it must appear in ads: [confirm with principal]

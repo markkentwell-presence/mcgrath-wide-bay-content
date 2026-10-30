@@ -5,7 +5,7 @@ Source: the live mcgrathwidebay.com.au theme stylesheet and logo files, checked 
 ## Name and co-brand
 
 - Office trading name on its own site: **McGrath Knight Frank Wide Bay & Fraser Coast**.
-- The McGrath head office site lists the office as **McGrath Bundaberg | Bargara**.
+- The group runs several offices (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water). The McGrath head office site lists the Bundaberg office as **McGrath Bundaberg | Bargara**. Name the office a post is for on the last slide, with that office's phone from the office profile.
 - Logo in use: the McGrath and Knight Frank dual logo (McGrath wordmark in black, a vertical divider, the Knight Frank mark in Knight Frank red). Use the supplied file only.
 
 ## Colours
@@ -39,7 +39,7 @@ Headline sentence case, not all caps. Small uppercase labels with wide letter sp
 ## Photography
 
 - Use the professional listing photography supplied for the campaign, with the photographer's licence terms and the vendor's OK.
-- Local lifestyle shots should be genuinely local (Bargara foreshore, Mon Repos, Bundaberg CBD, Hervey Bay esplanade) and either your own or properly licensed.
+- Local lifestyle shots should be genuinely local (Bargara foreshore, Mon Repos, Bundaberg CBD, Hervey Bay esplanade, Maryborough's heritage streets, Gladstone harbour, Agnes Water and Seventeen Seventy) and match the office the post is for and either your own or properly licensed.
 - No AI-generated "property" images presented as real. No fake twilight conversions unless labelled where required by McGrath policy.
 
 ## Tone

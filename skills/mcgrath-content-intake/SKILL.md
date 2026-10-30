@@ -15,7 +15,7 @@ Read the office's details before writing anything. Look in this order and use th
 1. An `OFFICE-PROFILE.md` the user attached, pasted, or saved in Project knowledge or the current folder.
 2. `OFFICE-PROFILE.md` at the plugin root (`${CLAUDE_PLUGIN_ROOT}/OFFICE-PROFILE.md`) or inside this skill folder.
 
-Use its agency name, phone, brand colours, sign-off, standard lines and the "Show licensee line on posts" setting in every output. If the user asks to change a detail ("our licence number is..."), give them the updated file to save.
+Use its agency name, office list, brand colours, sign-off, standard lines and the "Show licensee line on posts" setting in every output. If the user asks to change a detail ("our licence number is..."), give them the updated file to save.
 
 ## Step 1. Ask these four questions first (one message, numbered)
 
@@ -28,10 +28,16 @@ Ask all four together, keep it short, and accept short answers. If the user alre
    3. More landlords on the rent roll
    4. More sellers and listings
    5. Personal and community brand (build in public)
-3. **What is the property or topic?** Paste the listing link or copy, or describe the topic (market update, suburb, how we work, a sold result, a local event).
+3. **What is the property or topic, and which office or suburb is it for?** Paste the listing link or copy, or describe the topic (market update, suburb, how we work, a sold result, a local event). The group has several offices (Bundaberg, Bargara, Hervey Bay, Maryborough, Gladstone, Agnes Water), so confirm which one the post belongs to.
 4. **Which format?** Piece to camera (talking to the phone) or carousel (swipe post). If unsure, recommend one using the rule below.
 
 Format rule of thumb: comfort 1 to 2, or a topic heavy with numbers, suggests a carousel. Comfort 3 to 5, or a property with a strong walk-through, suggests piece to camera. Both is fine: one script and one carousel from the same idea.
+
+## Step 1b. Pick the office
+
+Every post belongs to one office. Work it out in this order: the office the user names, the suburb of the listing or topic (match it to the "Suburbs it looks after" column in the office profile), the presenter's saved office, then the profile's default office. Say which office you picked in one line ("Using the Hervey Bay office: 07 4121 0616") so the user can correct it.
+
+Use that office's phone, email, suburb names and sign-off in the script, slides and captions. Never mix offices in one post, and never use one office's phone on another office's listing.
 
 ## Step 2. Presenter profile
 
@@ -41,7 +47,7 @@ Use the profile to set voice: a 20-year principal talks with quiet authority, a 
 
 ## Step 3. Pull the facts
 
-- If a listing link or copy is supplied, extract: address, suburb, beds, baths, car, land size, price or price method (offers over, auction, by negotiation, contact agent), inspection times, standout features in the agent's own words, agent names.
+- If a listing link or copy is supplied, extract: address, suburb, which office lists it, beds, baths, car, land size, price or price method (offers over, auction, by negotiation, contact agent), inspection times, standout features in the agent's own words, agent names.
 - If you can browse, read the link. If you cannot, ask the user to paste the listing copy.
 - Never invent features, distances, views, school catchments, rental returns or market stats. If a fact is missing, leave a clear placeholder like `[confirm: walking distance to beach]` and list it at the end.
 - Market stats must come from a named source with a date (for example the office's own RP Data / Cotality or PriceFinder report, REIQ, SQM, Domain or realestate.com.au suburb profiles). Stamp it: "Source: X, data as at Month YYYY".
